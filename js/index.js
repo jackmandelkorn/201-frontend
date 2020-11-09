@@ -1,5 +1,5 @@
 $(".about-click").click(() => {
   $([document.documentElement, document.body]).animate({
-    scrollTop: $("#scroll-anchor").offset().top
+    scrollTop: ((window.innerWidth > 894) ? $("#scroll-anchor").offset().top : ($("#scroll-anchor").offset().top - 96))
   }, 1400)
 })
