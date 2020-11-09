@@ -1,0 +1,291 @@
+#watermark {
+  position: absolute;
+  z-index: -1;
+  top: -200px;
+  right: 0px;
+  box-sizing: border-box;
+  width: 800px;
+  height: 800px;
+  opacity: 0.025;
+  transform: rotate(-15deg) translateX(100px);
+}
+
+div.buffer {
+  width: 100vw;
+  height: 96px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  height: 96px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #edf2f7;
+  background: white;
+  background-color: white;
+  padding: 0px 32px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+#nav {
+  height: 96px;
+  max-width: 1024px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#nav > div > h1 {
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+
+#nav > div > h1 > a {
+  color: black;
+  text-decoration: none;
+}
+
+#nav > div > h1 > a > img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 4px;
+  box-sizing: border-box;
+}
+
+#nav > div > a {
+  font-size: 16px;
+  margin: 0px 16px;
+  cursor: pointer;
+  opacity: 1;
+  color: black;
+  text-decoration: none;
+  transition: opacity ease 0.2s;
+}
+
+#nav > div > a:hover {
+  opacity: 0.6;
+}
+
+#nav > div > a:last-child {
+  margin-right: 0px;
+}
+
+div.hero {
+  width: 100vw;
+  box-sizing: border-box;
+  background: transparent;
+  background-color: transparent;
+  border-bottom: 1px solid #edf2f7;
+  padding: 96px 32px;
+}
+
+div.hero > div {
+  min-height: 96px;
+  max-width: 1024px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+div.hero > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  min-height: 48px;
+}
+
+div.hero > div > div.vertical-spread {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: space-between;
+  min-height: 96px;
+  box-sizing: border-box;
+}
+
+div.hero > div > div > h1 {
+  font-weight: 300;
+  font-size: 36px;
+  margin: 0px;
+  line-height: 36px;
+}
+
+div.hero > div > div > h3 {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0px;
+  line-height: 18px;
+  opacity: 0.6;
+}
+
+div.hero > div > div > a {
+  background: #e2e8f0;
+  background-color: #e2e8f0;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  padding: 15px 24px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  margin: 0px 8px;
+  cursor: pointer;
+}
+
+div.hero > div > div > a.accent {
+  background: black;
+  background-color: black;
+  color: white;
+}
+
+div.hero > div > div > a:last-child {
+  margin-right: 0px;
+}
+
+div.hero.gradient {
+  background: linear-gradient(0deg, #b13cff, #dd45d3 50%, #fd9d52);
+  padding: 48px 32px;
+  color: white;
+}
+
+div.hero.gradient > div > div > h1 {
+  font-weight: 700;
+  max-width: 384px;
+}
+
+div.hero.gradient > div > div > .paragraph {
+  max-width: 384px;
+  opacity: 0.6;
+  margin-top: 32px;
+}
+
+div.hero.gradient > div.centered {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+div.hero.gradient > div.centered > img {
+  height: 96px;
+}
+
+div.hero.gradient > div.centered > h1 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 16px;
+}
+
+div.hero.gradient > div > div > #vehicle-container {
+  width: 447px;
+}
+
+
+div.hero.gradient > div > div > div > #vehicle {
+  transform: translateX(50px) translateY(50px);
+  width: 768px;
+  height: 265px;
+}
+
+footer {
+  background: #e2e8f0;
+  background-color: #e2e8f0;
+  width: 100vw;
+  height: 96px;
+  box-sizing: border-box;
+  padding: 0px 32px;
+}
+
+footer > div {
+  height: 96px;
+  max-width: 1024px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+footer > div > div > span {
+  margin-right: 16px;
+}
+
+footer > div > div > a {
+  font-size: 16px;
+  margin: 0px 16px;
+  cursor: pointer;
+  opacity: 1;
+  color: black;
+  text-decoration: none;
+  transition: opacity ease 0.2s;
+}
+
+footer > div > div > a:hover {
+  opacity: 0.6;
+}
+
+footer > div > div > a:last-child {
+  margin-right: 0px;
+}
+
+footer > div > div > a:first-child {
+  margin-left: 0px;
+}
+
+@media only screen and (max-width : 894px) {
+  .mobile-hide {
+    display: none;
+  }
+  footer > div {
+    align-content: center;
+    justify-content: center;
+  }
+  div.hero > div > div.vertical-spread {
+    margin-bottom: 48px;
+  }
+  div.hero > div > div > h3 {
+    margin-top: 16px;
+  }
+  div.hero > div {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  div.hero.gradient > div > div > h1 {
+    max-width: 512px;
+    margin-top: 32px;
+  }
+  div.hero.gradient > div > div > .paragraph {
+    margin-top: 16px;
+    max-width: 512px;
+  }
+  div.hero.gradient > div > div > #vehicle-container {
+    margin-top: -64px;
+  }
+  div.hero > div > div.vertical-spread {
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+}
