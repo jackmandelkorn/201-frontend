@@ -203,7 +203,7 @@ div.hero.gradient > div > div > #vehicle-container {
 
 
 div.hero.gradient > div > div > div > #vehicle {
-  transform: translateX(50px) translateY(50px);
+  transform: translateX(80px) translateY(50px);
   width: 768px;
   height: 265px;
 }
