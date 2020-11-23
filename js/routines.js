@@ -59,6 +59,10 @@ const reset = (obj) => {
   obj.setCustomValidity("")
 }
 
+const redirectLogin = () => {
+  location.href = "./login"
+}
+
 $(document).keyup((event) => {
   if ($(".on-enter-trigger").is(":focus") && event.key == "Enter") {
     $(".on-enter-target")[0].click()

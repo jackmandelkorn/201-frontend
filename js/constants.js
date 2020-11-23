@@ -10,7 +10,8 @@ const REDIRECTS = {
   home: "./",
   onAuth: "./dashboard",
   noAuth: "./login",
-  onVerify: "./verify"
+  toVerify: "./verify",
+  onVerify: "./success"
 }
 
 const INPUTS = {

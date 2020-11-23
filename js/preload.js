@@ -44,7 +44,7 @@ const ROUTINES = {
         USER = result.user
         sessionStorage.setItem("verify", email)
         callback(null)
-        location.href = REDIRECTS.onVerify
+        location.href = REDIRECTS.toVerify
       }
     })
   },
@@ -62,7 +62,7 @@ const ROUTINES = {
       else {
         callback(null)
         sessionStorage.clear()
-        location.href = REDIRECTS.noAuth
+        location.href = REDIRECTS.onVerify
       }
     })
   },
