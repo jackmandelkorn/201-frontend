@@ -31,7 +31,7 @@
     <meta name="msapplication-square310x310logo" content="assets/logo/mstile-310x310.png" />
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <!--ICONOGRAPHY-->
+    <!--STYLING-->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/login.css">
@@ -40,8 +40,14 @@
         min-height: 576px;
       }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--JQUERY-->
+    <script src="js/jquery.min.js"></script>
+    <!--AWS-SDK-->
+    <script src="js/aws/sdk.min.js"></script>
+    <script src="js/aws/cognito.min.js"></script>
+    <script src="js/aws/identity.min.js"></script>
     <!--SCRIPTS-->
+    <script src="js/constants.js"></script>
     <script src="js/preload.js"></script>
     <title>Rideshare - Sign Up</title>
     <!--GA SCRIPTS-->
@@ -67,12 +73,12 @@
     </header>
     <div class="login">
       <h3>Create an account</h3>
-      <input type="text" spellcheck="false" id="input-name" placeholder="Name">
-      <input type="email" spellcheck="false" id="input-email" placeholder="Email">
-      <input type="text" spellcheck="false" id="input-phone" placeholder="Phone Number">
-      <input type="password" id="input-password" placeholder="Password">
-      <button>Sign Up</button>
+      <input type="text" spellcheck="false" id="input-firstName" placeholder="First Name" minlength="2" maxlength="24">
+      <input type="text" spellcheck="false" id="input-lastName" placeholder="Last Name" minlength="2" maxlength="24">
+      <input type="email" spellcheck="false" id="input-email" placeholder="Email" maxlength="48" onkeyup="reset(this)" onpaste="reset(this)">
+      <input type="password" id="input-password" placeholder="Password" minlength="6" maxlength="24" onkeyup="reset(this)" onpaste="reset(this)" class="on-enter-trigger">
+      <button onclick="signup()" class="on-enter-target">Sign Up</button>
     </div>
-    <script src="js/index.js"></script>
+    <script src="js/routines.js"></script>
   </body>
 </html>

@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/verify.css">
     <!--JQUERY-->
     <script src="js/jquery.min.js"></script>
     <!--AWS-SDK-->
@@ -43,9 +44,9 @@
     <script src="js/aws/identity.min.js"></script>
     <!--SCRIPTS-->
     <script src="js/constants.js"></script>
-    <script src="js/login.js"></script>
+    <script src="js/verify.js"></script>
     <script src="js/preload.js"></script>
-    <title>Rideshare - Log In</title>
+    <title>Rideshare - Verify Your Account</title>
     <!--GA SCRIPTS-->
   </head>
   <body>
@@ -62,17 +63,20 @@
           </h1>
         </div>
         <div>
-          <a href="./signup" class="mobile-hide">Don't have an account? <b>Sign Up</b></a>
-          <a href="./signup">Sign Up</a>
+          <a href="./login" class="mobile-hide">Already have an account? <b>Log In</b></a>
+          <a href="./login">Log In</a>
         </div>
       </div>
     </header>
     <div class="login">
-      <h3>Log in to your account</h3>
-      <input type="email" spellcheck="false" id="input-email" placeholder="Email" maxlength="48" onkeyup="reset(this)" onpaste="reset(this)">
-      <input type="password" id="input-password" placeholder="Password" minlength="6" maxlength="24" onkeyup="reset(this)" onpaste="reset(this)" class="on-enter-trigger">
-      <a href="">Don't remember your password?</a>
-      <button onclick="login()" class="on-enter-target">Log In</button>
+      <h3>Verify your account</h3>
+      <input type="text" spellcheck="false" id="input-code" placeholder="Code" minlength="6" maxlength="6" onkeyup="reset(this)" onpaste="reset(this)" class="on-enter-trigger">
+      <p>
+        <span>We've sent an email to</span>
+        <span id="email-placeholder"></span>
+        <span>containing your verification 6-digit code</span>
+      </p>
+      <button onclick="verify()" class="on-enter-target">Verify Account</button>
     </div>
     <script src="js/routines.js"></script>
   </body>

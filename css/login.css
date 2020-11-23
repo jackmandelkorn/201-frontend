@@ -48,6 +48,11 @@ div.login > input {
   box-sizing: border-box;
 }
 
+div.login > input:invalid {
+  border: 3px solid rgba(255,0,0,0.3);
+  padding: 0px 13px;
+}
+
 div.login > input::placeholder {
   letter-spacing: normal;
 }

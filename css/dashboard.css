@@ -1,0 +1,27 @@
+html, body {
+  overflow-y: hidden;
+}
+
+header {
+  border: none;
+  background-color: transparent;
+  background: transparent;
+}
+
+footer {
+  display: none;
+}
+
+div.dashboard {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+p {
+  padding: 0px 32px;
+}

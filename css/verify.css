@@ -1,0 +1,15 @@
+div.login > input {
+  letter-spacing: 4px;
+}
+
+input {
+  text-align: center;
+}
+
+#email-placeholder {
+  font-weight: bold;
+}
+
+p {
+  padding: 0px 32px;
+}
