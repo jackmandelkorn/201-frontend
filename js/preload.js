@@ -61,7 +61,6 @@ const ROUTINES = {
       }
       else {
         callback(null)
-        sessionStorage.clear()
         location.href = REDIRECTS.onVerify
       }
     })
